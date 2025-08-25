@@ -1,0 +1,55 @@
+zerodha:
+  api_key: YOUR_ZERODHA_API_KEY
+  api_secret: YOUR_ZERODHA_API_SECRET
+  redirect_url: http://localhost:3000/auth/zerodha
+
+database:
+  type: sqlite
+  path: /home/ubuntu/nifty_trading_agent/data/nifty_trading_agent.db
+
+logging:
+  level: INFO
+  file: /home/ubuntu/nifty_trading_agent/logs/app.log
+
+trading:
+  initial_capital: 1000000
+  accuracy_threshold: 0.90
+  max_drawdown_percent: 0.10
+  daily_loss_limit_percent: 0.05
+  max_position_per_instrument_percent: 0.20
+  max_concentration_per_underlying_percent: 0.30
+  max_consecutive_losses: 5
+
+rl_agent:
+  state_space_dim: 65
+  action_space_dim: 800
+  model_save_path: /home/ubuntu/nifty_trading_agent/models/
+  training_episodes: 10000
+  warmup_episodes: 100
+  gamma: 0.99
+  learning_rate: 0.0001
+  batch_size: 64
+  target_update_frequency: 1000
+  epsilon_start: 1.0
+  epsilon_end: 0.01
+  epsilon_decay_steps: 50000
+
+news_api:
+  api_key: YOUR_NEWS_API_KEY
+
+alphavantage:
+  api_key: YOUR_ALPHA_VANTAGE_API_KEY
+
+twitter:
+  consumer_key: YOUR_TWITTER_CONSUMER_KEY
+  consumer_secret: YOUR_TWITTER_CONSUMER_SECRET
+  access_token: YOUR_TWITTER_ACCESS_TOKEN
+  access_token_secret: YOUR_TWITTER_ACCESS_TOKEN_SECRET
+
+reddit:
+  client_id: YOUR_REDDIT_CLIENT_ID
+  client_secret: YOUR_REDDIT_CLIENT_SECRET
+  user_agent: YOUR_REDDIT_USER_AGENT
+
+
+

@@ -1,0 +1,41 @@
+numpy
+pandas
+scipy
+scikit-learn
+tensorflow
+stable-baselines3
+matplotlib
+seaborn
+requests
+beautifulsoup4
+lxml
+newsapi-python
+alphavantage
+ tweepy
+ praw
+ nltk
+ textblob
+ transformers
+ torch
+ ta-lib
+ flask
+ flask-restful
+ flask-cors
+ zerodha-kiteconnect
+ sqlalchemy
+ psycopg2-binary
+ pymongo
+ redis
+ celery
+ gunicorn
+ gevent
+ python-dotenv
+ pyyaml
+ loguru
+ pytest
+ pytest-mock
+ pydrive
+ google-auth-oauthlib
+ google-api-python-client
+
+
